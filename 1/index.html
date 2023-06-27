@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百叶窗</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background-color: #7f8c8d;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            width: 900px;
+            height: 300px;
+            position: relative;
+            top: 200px;
+            /*超出部分隐藏*/
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+        .container div {
+            transition: .7s;
+            overflow: hidden;
+        }
+        .container div:hover {
+            /*当容器为0时空间不会缩小*/
+            flex-shrink: 0;
+        }
+        img {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><img src="./static/1.gif" ></div>
+        <div><img src="./static/2.gif" ></div>
+        <div><img src="./static/3.gif" ></div>
+        <div><img src="./static/4.gif" ></div>
+        <div><img src="./static/5.gif" ></div>
+        <div><img src="./static/6.gif" ></div>
+        <div><img src="./static/7.gif" ></div>
+    </div>
+</body>
+</html>
